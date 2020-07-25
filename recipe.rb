@@ -1,6 +1,6 @@
 class Recipe
     attr_reader :name
-    attr_accessor :description
+    attr_accessor :description, :restaurant
     @@all = []
 
     def initialize(name, description)
@@ -12,6 +12,12 @@ class Recipe
     def self.all
         @@all
     end
+
+    def recipies
+        Restaurant.all.select {|restaurant| restaurant.recipe == self}
+    end
+
+    
 
 end
 

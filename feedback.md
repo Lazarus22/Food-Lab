@@ -2,7 +2,11 @@
 ## Questions
 
 - What is the difference between `self` on line 9 and `self` on line 12 in `recipe.rb`?
+In line 9 self is the current instance being put into the array of @@all
+in line 12 self refers to the class not the instance
+
 - What is the purpose of the `Recipe.all` and `Restaurant.all` methods?
+to return all the instances contained in each class
 
 ## Next Steps
 - A Restaurant has many Recipes
